@@ -1,0 +1,88 @@
+#title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.hero img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.nav-link {
+    color: black;
+}
+
+.about img {
+    padding: 0px;
+    border-radius: 10px;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.mycontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1020px) {
+    .mycontainer {
+        display: grid;
+        gap: 3rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+    }
+}
+
+.products h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.hero, .feature, .footer {
+    background-color: white;
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+}
+
+.footer ul {
+    margin-right: 2.5rem;
+}
